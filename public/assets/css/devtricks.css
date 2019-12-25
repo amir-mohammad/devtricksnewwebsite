@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Open sans';
+  src: url(../webfonts/OpenSans-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  font-family: 'Open sans';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 31px;
+  color: #525c65;
+}
+
+nav li:first-child {
+  border-right: 1px solid gray;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+  nav li:first-child {
+    border-right: none;
+  }
+}
+
+nav li:last-child a {
+  color: white !important;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+nav li .dropdown-menu {
+  padding: 30px 0;
+  background: #e5eff5;
+  position: absolute;
+  top: 45px;
+  width: 300px;
+  border: none !important;
+}
+/*# sourceMappingURL=devtricks.css.map */
