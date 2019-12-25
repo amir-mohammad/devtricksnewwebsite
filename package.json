@@ -1,0 +1,28 @@
+{
+  "name": "devtricksnewwebsite",
+  "version": "1.0.0",
+  "description": "a website that learn you some advance programing langauge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amir-mohammad/devtricksnewwebsite.git"
+  },
+  "author": "amir azarbash & mehdi samavat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amir-mohammad/devtricksnewwebsite/issues"
+  },
+  "homepage": "https://github.com/amir-mohammad/devtricksnewwebsite#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "hbs": "^4.0.6",
+    "jquery": "^3.4.1",
+    "nodemon": "^2.0.2",
+    "popper.js": "^1.16.0"
+  }
+}
