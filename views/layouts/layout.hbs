@@ -18,6 +18,7 @@
     <title>Dev tricks website</title>
 </head>
 <body>
+    {{> navbar}}
     {{{body}}}
 
     
@@ -33,7 +34,20 @@
        //event when menu has been closed
         $('.dropdown').on('hidden.bs.dropdown',function(e){
           e.target.style.backgroundColor = '#fff';
-       }) 
+       }) ;
+
+       $(document).ready(function(){
+
+           $('.tab-header li').on('click',function(){
+               const text = $(this).text();
+               $(this).css({color:'#000'}).siblings().css({color:'#96a0aa'});
+               const transformText = text.trim().replace(/ /g,"").toLowerCase();
+              $('#'+transformText).fadeIn(500).siblings().fadeOut(300);
+
+
+           });
+
+       })
     </script>
 </body>
 </html>

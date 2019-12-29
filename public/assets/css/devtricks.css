@@ -11,7 +11,7 @@
 }
 
 nav {
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-size: 16px;
   font-weight: 700;
   line-height: 31px;
@@ -43,5 +43,150 @@ nav li .dropdown-menu {
   top: 45px;
   width: 300px;
   border: none !important;
+}
+
+#header {
+  background: url(../imgs/hero_bg.png);
+}
+
+#header .image {
+  background: url(../imgs/programming.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#header .content {
+  padding: 150px 0;
+}
+
+#header a {
+  display: inline-block;
+  -webkit-box-shadow: 44px 45px 118px -67px rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 44px 45px 118px -67px rgba(0, 0, 0, 0.9) !important;
+  color: white;
+  padding: 15px 35px;
+}
+
+#course {
+  padding: 30px 0;
+}
+
+#course ul.tab-header {
+  list-style: none;
+}
+
+#course ul.tab-header li {
+  font-family: "Open sans";
+  font-weight: 900;
+  font-size: 18px;
+  padding: 20px 0;
+  color: #96a0aa;
+  cursor: pointer;
+}
+
+#course ul.tab-content {
+  list-style: none;
+  margin-top: 4rem;
+}
+
+#course #intro-link {
+  color: #000;
+  text-decoration: none;
+}
+
+#course #intro {
+  margin-top: 5rem;
+  padding: 30px 50px;
+  border-radius: 10px;
+  border-left: 30px solid #2a77aa;
+  -webkit-box-shadow: 11px 10px 54px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 10px 54px -12px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#course #intro:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px -4px 18px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px -4px 18px -8px rgba(0, 0, 0, 0.75);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content:first-child {
+  display: block;
+}
+
+#advantage {
+  padding: 5rem 0;
+  background: #f3f8fe;
+}
+
+#advantage h2 {
+  text-align: center;
+}
+
+#advantage .row {
+  padding-top: 3rem;
+}
+
+#advantage .row .ad-col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#advantage .row .ad-col-1 .ad-image {
+  position: relative;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+#advantage .row .ad-col-1 .ad-content {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding-left: 4rem;
+}
+
+#advantage .row .ad-col-1 .ad-content h3 {
+  font-family: 'Open sans';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 0.5;
+  padding: 0;
+  margin: 0;
+}
+
+#advantage .row .ad-col-1 .ad-content span {
+  display: inline-block;
+  width: 70%;
+  border: 2px solid #FFA234;
+  padding: 0;
+  margin: 0;
+}
+
+#advantage .row .ad-col-1 .svg {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, 20%);
+          transform: translate(50%, 20%);
 }
 /*# sourceMappingURL=devtricks.css.map */

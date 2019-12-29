@@ -1,45 +1,160 @@
-@import 'webfonts';
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    
+@import "webfonts";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-nav{
+nav {
+  font-family: "Open sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 31px;
+  color: #525c65;
+
+  li {
+    &:first-child {
+      border-right: 1px solid gray;
+      padding-right: 50px;
+      padding-left: 50px;
+      @media (max-width: 991px) {
+        border-right: none;
+      }
+    }
+
+    &:last-child {
+      a {
+        color: white !important;
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+
+    .dropdown-menu {
+      padding: 30px 0;
+      background: #e5eff5;
+      position: absolute;
+      top: 45px;
+      width: 300px;
+      border: none !important;
+    }
+  }
+}
+
+#header {
+  background: url(../imgs/hero_bg.png);
+  .image {
+    background: url(../imgs/programming.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .content {
+    padding: 150px 0;
+  }
+  a {
+    display: inline-block;
+    -webkit-box-shadow: 44px 45px 118px -67px rgba(0, 0, 0, 0.9) !important;
+    -moz-box-shadow: 44px 45px 118px -67px rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 44px 45px 118px -67px rgba(0, 0, 0, 0.9) !important;
+    color: white;
+    padding: 15px 35px;
+  }
+}
+// course
+#course {
+  padding: 30px 0;
+  ul.tab-header {
+    list-style: none;
+    li {
+      font-family: "Open sans";
+      font-weight: 900;
+      font-size: 18px;
+      padding: 20px 0;
+      color: #96a0aa;
+      cursor: pointer;
+    }
+  }
+  ul.tab-content{
+      list-style: none;
+      margin-top: 4rem;
+  }
+  #intro-link {
+    color: #000;
+    text-decoration: none;
+  }
+  #intro {
+      margin-top:5rem;
+    padding: 30px 50px;
+    border-radius: 10px;
+    border-left: 30px solid #2a77aa;
+    -webkit-box-shadow: 11px 10px 54px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 10px 54px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 11px 10px 54px -12px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        -webkit-box-shadow: 2px -4px 18px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px -4px 18px -8px rgba(0,0,0,0.75);
+box-shadow: 2px -4px 18px -8px rgba(0,0,0,0.75);
+    }
+  }
+}
+
+.tab-content{
+    display: none;
+    &:first-child{
+        display: block;
+    }
+}
 
 
-    font-family: 'Open sans';
-    font-size:16px;
-    font-weight:700;
-    line-height: 31px;
-    color:#525c65;
-
-    li{
-        &:first-child{
-            border-right: 1px solid gray;
-            padding-right: 50px;
-            padding-left:50px;
-            @media(max-width:991px){
-                border-right: none;
-            }
-        }
-
-        &:last-child{
-            a{
-                color:white !important;
-               font-size: 15px;
-               font-weight: 700; 
-            }
-        }
-
-        .dropdown-menu{
-            padding:30px 0;
-            background:#e5eff5;
-            position: absolute;
-            top:45px;
-            width:300px;
-            border:none !important
-        }
+#advantage{
+    padding:5rem 0;
+    background:#f3f8fe;
+    h2{
+        text-align: center;
+    }
+    .row{
+        padding-top:3rem;
+       .ad-col-1{
+           display: flex;
+           flex-wrap: wrap;
+          .ad-image{
+            position: relative;
+            flex-basis: 40%;
+          }
+          .ad-content{
+              flex-basis: 60%;
+              padding-left: 4rem;
+                h3{
+                    font-family: 'Open sans';
+                    font-size: 16px;
+                    font-weight: 600;
+                  line-height: 0.5;
+                  padding:0;
+                  margin: 0;
+                }
+                span{
+                    display: inline-block;
+                    width:70%;
+                    border:2px solid #FFA234;
+                    padding:0;
+                    margin: 0;
+                }
+          }
+           .svg{
+               background-color: white;
+               width: 80px;
+               height: 80px;
+               border-radius: 50%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               position: absolute;
+               top: 0;
+               right: 0;
+               transform: translate(50%,20%);
+           }
+       }
     }
 
 }
